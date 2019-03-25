@@ -29,10 +29,10 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform-origin: center;
+    transform: translate(-50% ,-50%) rotate(-90deg);
     pointer-events: none;
 }
-
 
 
 .time-display{
@@ -41,11 +41,12 @@
     color: aliceblue;
     bottom: 10%;
 }
-.vid-container{
+video{
   position: fixed;
   top:0;
   left:0;
   width: 100%;
+  height: 100%;
   z-index: -10;
 }
 

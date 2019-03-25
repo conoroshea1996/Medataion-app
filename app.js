@@ -19,7 +19,7 @@ timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
 
 sounds.forEach(sound => {
   sound.addEventListener("click", function() {
-    song.src = this.getAttribute("data-sound");
+    song.src = this.getAttribute("data-sounds");
     video.src = this.getAttribute("data-video");
     checkPlaying(song);
   });
